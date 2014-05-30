@@ -2,6 +2,7 @@
 	position: relative;
 	margin-left: -19px;
 	z-index: 10;
+	padding: 0 !important;
 }
 
 .form-search input[type="text"] {
@@ -47,6 +48,7 @@ a.btn {
 
 table.cart input.q {
 	max-height: 17px;
+	height: auto !important;
 }
 
 .filter input[type="text"] {
@@ -92,15 +94,27 @@ textarea {
 	max-width: 650px;
 }
 
-.content input[type="text"] {
+.content input[type="text"], input[type="email"] {
 	min-height: 10px;
-	max-width: 188px;
+	/*max-width: 188px;*/
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;
 }
 
 .content input[type="submit"] {
 	width: auto !important;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
 }
 
 .corner {
 	bottom: -3px !important;
+}
+
+input[type="radio"] {
+	padding: 5px !important;
+	border: none !important;
+	background-color: transparent !important;
+	height: auto !important;
+	min-height: auto !important;
 }
